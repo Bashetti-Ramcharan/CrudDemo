@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+<center>	<h1>Registration Form!!</h1>
+			<form th:action="@{/process_register}" method="post" th:object="${obj}">
+			<div>
+				ID:<input type="number" th:field="*{id}"/><br>
+				NAME:<input type="text" th:field="*{name}"/><br>
+				AGE:<input type="number" th:field="*{age}"/><br>
+				<br>
+			</div>
+			<div>
+			<button type="submit">Register</button>
+			</div>
+			</form>
+			
+</center>
+
+
+</body>
+</html>

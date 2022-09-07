@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Hey!!, Your Registration was Successful</h1><br>
+	<h3>Click below button to login</h3><br>
+	<h3>User Id:<p th:text="${u1.id}"/></h3><br>
+	<h3>Name:<p th:text="${u1.name}"/></h3><br>
+	<h3>Age:<p th:text="${u1.age}"/></h3><br>
+	
+	<h3><a th:href="@{/sign-in}">Sign-In</a></h3>
+
+</body>
+</html>

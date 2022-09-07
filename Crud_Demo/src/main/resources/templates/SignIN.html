@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>	<h1>SIGN IN Form!!</h1>
+			<form th:action="@{/process_signIN}" method="post" th:object="${obj1}">
+			<div>
+				ID:<input type="number" th:field="*{id}"/><br>
+				NAME:<input type="text" th:field="*{name}"/><br>
+			</div>
+			<div>
+			<button type="submit">SIGN-IN</button>
+			</div>
+			</form>
+			
+</center>
+</body>
+</html>
